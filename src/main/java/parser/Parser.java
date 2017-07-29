@@ -23,7 +23,7 @@ public class Parser extends DefaultHandler {
     private static final String JAXP_SCHEMA_LANGUAGE = "http://java.sun.com/xml/jaxp/properties/schemaLanguage";
     private SAXParser parser;
 
-    public Parser( String impl) throws ParserConfigurationException, SAXException {
+    public Parser(String impl) throws ParserConfigurationException, SAXException {
         System.setProperty("javax.xml.parsers.SAXParserFactory", impl);
         LOGGER.info("Using " + impl);
 
